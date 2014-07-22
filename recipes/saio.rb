@@ -39,6 +39,7 @@ execute 'apt-get update -y'
   python-netifaces python-pip python-dnspython
   python-mock
   memcached build-essential emacs git tree
+  python-keystoneclient
 }.each { |pkg| package pkg }
 
 template "/tmp/loopback_device_as_storage.sh" do
